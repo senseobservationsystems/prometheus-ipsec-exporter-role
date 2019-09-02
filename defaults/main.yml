@@ -2,7 +2,7 @@
 # defaults file for prometheus-ipsec-exporter-role
 prometheus_ipsec_exporter_version: 0.3.1
 prometheus_ipsec_exporter_release_name: "ipsec_exporter-v{{ prometheus_ipsec_exporter_version }}.linux-amd64"
-url: "https://github.com/dennisstritzke/ipsec_exporter/releases/download/v{{  }}/{{ prometheus_ipsec_exporter_release_name }}.tar.gz"
+url: "https://github.com/dennisstritzke/ipsec_exporter/releases/download/v{{ prometheus_ipsec_exporter_version }}/{{ prometheus_ipsec_exporter_release_name }}.tar.gz"
 
 prometheus_ipsec_exporter_config_flags:
   'web.listen-address': '0.0.0.0:9104'
