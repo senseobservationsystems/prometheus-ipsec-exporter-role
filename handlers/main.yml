@@ -1,0 +1,13 @@
+---
+# handlers file for prometheus-ipsec-exporter-role
+
+- name: service reenable
+  command: systemctl reenable prometheus-ipsec-exporter.service
+
+- name: reinit ipsec exporter
+  command: initctl reload-configuration
+
+- name: restart ipsec exporter
+  service:
+    name: prometheus-ipsec-exporter
+    state: restarted
