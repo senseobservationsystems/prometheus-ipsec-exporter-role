@@ -1,4 +1,4 @@
-Role Name
+Ansible Role: prometheus-ipsec-exporter
 =========
 
 A brief description of the role goes here.
